@@ -1,0 +1,30 @@
+.main-container {
+	@include flex-row-center;
+	padding: 23.5rem 0;
+	background-color: $dark-blue;
+	height: 100%;
+}
+
+.card {
+	background: $grayish-blue;
+	padding: 5rem;
+	@include flex-column-center;
+	border-radius: 1.5rem;
+	width: 37.5%;
+	text-align: center;
+
+	&__advice-number {
+		font-size: 1.4rem;
+		letter-spacing: 0.43rem;
+		font-weight: 800;
+		color: $neon-green;
+		text-transform: uppercase;
+	}
+
+	&__advice {
+		font-size: 2.86rem;
+		font-weight: 800;
+		margin-top: 2.8rem;
+		color: $light-cyan;
+	}
+}

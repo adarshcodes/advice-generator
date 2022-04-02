@@ -17,4 +17,40 @@ body {
 body {
   font-family: "Manrope", sans-serif;
 }
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 23.5rem 0;
+  background-color: #1f2632;
+  height: 100%;
+}
+
+.card {
+  background: #4e5d73;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  width: 37.5%;
+  text-align: center;
+}
+
+.card__advice-number {
+  font-size: 1.4rem;
+  letter-spacing: 0.43rem;
+  font-weight: 800;
+  color: #52ffa8;
+  text-transform: uppercase;
+}
+
+.card__advice {
+  font-size: 2.86rem;
+  font-weight: 800;
+  margin-top: 2.8rem;
+  color: #cee3e9;
+}
 /*# sourceMappingURL=main.css.map */
