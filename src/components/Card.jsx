@@ -1,6 +1,6 @@
 import React from "react";
 import Dice from "./Dice";
-import Divider from "../assets/images/pattern-divider-desktop.svg";
+import Divider from "../assets/images/pattern-divider.svg";
 
 export default function Card(props) {
 	return (
