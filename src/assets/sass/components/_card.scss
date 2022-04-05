@@ -1,6 +1,6 @@
 .main-container {
 	@include flex-row-center;
-	padding: 23.5rem 0;
+	padding: 23.5rem 0 27rem 0;
 	background-color: $dark-blue;
 	height: 100%;
 }
@@ -12,6 +12,7 @@
 	border-radius: 1.5rem;
 	width: 37.5%;
 	text-align: center;
+	position: relative;
 
 	&__advice-number {
 		font-size: 1.4rem;
@@ -31,5 +32,26 @@
 	&__divider {
 		margin-top: 4.2rem;
 		margin-bottom: 2.5rem;
+	}
+}
+
+.dice {
+	background-color: $neon-green;
+	width: 6.5rem;
+	height: 6.5rem;
+	border-radius: 50%;
+	@include flex-row-center;
+	position: absolute;
+	bottom: -3.5rem;
+	cursor: pointer;
+	transition: all 0.3s;
+
+	&:hover {
+		box-shadow: 0px 1px 30px 4px rgba(82, 255, 168, 0.75);
+	}
+
+	&:active {
+		transform: scale(0.9) rotate(3600deg);
+		box-shadow: 0px 1px 21px 0px rgba(82, 255, 168, 0.75);
 	}
 }
