@@ -24,7 +24,12 @@ body {
   align-items: center;
   padding: 23.5rem 0 27rem 0;
   background-color: #1f2632;
-  height: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  .main-container {
+    padding: 18rem 0;
+  }
 }
 
 .card {
@@ -40,6 +45,24 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 1080px) {
+  .card {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .card {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .card {
+    width: 75%;
+  }
+}
+
 .card__advice-number {
   font-size: 1.4rem;
   letter-spacing: 0.43rem;
@@ -48,11 +71,23 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 520px) {
+  .card__advice-number {
+    font-size: 1rem;
+  }
+}
+
 .card__advice {
   font-size: 2.86rem;
   font-weight: 800;
   margin-top: 2.8rem;
   color: #cee3e9;
+}
+
+@media screen and (max-width: 520px) {
+  .card__advice {
+    font-size: 2rem;
+  }
 }
 
 .card__divider {
@@ -81,5 +116,13 @@ body {
 .dice:active {
   transform: scale(0.9) rotate(3600deg);
   box-shadow: 0px 1px 21px 0px rgba(82, 255, 168, 0.75);
+}
+
+@media screen and (max-width: 520px) {
+  .dice {
+    height: 6rem;
+    width: 6rem;
+    bottom: -3rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

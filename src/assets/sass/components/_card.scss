@@ -2,7 +2,10 @@
 	@include flex-row-center;
 	padding: 23.5rem 0 27rem 0;
 	background-color: $dark-blue;
-	height: 100%;
+
+	@media screen and (max-width: 760px) {
+		padding: 18rem 0;
+	}
 }
 
 .card {
@@ -14,12 +17,28 @@
 	text-align: center;
 	position: relative;
 
+	@media screen and (max-width: 1080px) {
+		width: 50%;
+	}
+
+	@media screen and (max-width: 760px) {
+		width: 60%;
+	}
+
+	@media screen and (max-width: 520px) {
+		width: 75%;
+	}
+
 	&__advice-number {
 		font-size: 1.4rem;
 		letter-spacing: 0.43rem;
 		font-weight: 800;
 		color: $neon-green;
 		text-transform: uppercase;
+
+		@media screen and (max-width: 520px) {
+			font-size: 1rem;
+		}
 	}
 
 	&__advice {
@@ -27,6 +46,10 @@
 		font-weight: 800;
 		margin-top: 2.8rem;
 		color: $light-cyan;
+
+		@media screen and (max-width: 520px) {
+			font-size: 2rem;
+		}
 	}
 
 	&__divider {
@@ -53,5 +76,11 @@
 	&:active {
 		transform: scale(0.9) rotate(3600deg);
 		box-shadow: 0px 1px 21px 0px rgba(82, 255, 168, 0.75);
+	}
+
+	@media screen and (max-width: 520px) {
+		height: 6rem;
+		width: 6rem;
+		bottom: -3rem;
 	}
 }
