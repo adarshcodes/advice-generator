@@ -28,7 +28,7 @@ body {
 }
 
 .card {
-  background: #4e5d73;
+  background: #323a49;
   padding: 5rem;
   display: flex;
   flex-direction: column;
@@ -52,5 +52,10 @@ body {
   font-weight: 800;
   margin-top: 2.8rem;
   color: #cee3e9;
+}
+
+.card__divider {
+  margin-top: 4.2rem;
+  margin-bottom: 2.5rem;
 }
 /*# sourceMappingURL=main.css.map */
